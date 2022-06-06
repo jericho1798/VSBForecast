@@ -1,0 +1,57 @@
+[ {
+  "name" : "TORFOREX.COM",
+  "link" : "https://torforex.com/prognoz-forex/eurusd-prognoz-evro-dollar-na-20-maya-2022/",
+  "date" : "20.05.2022",
+  "currencyPairName" : "EUR/USD",
+  "min" : 1.0325,
+  "max" : 1.065,
+  "direction" : "d"
+}, {
+  "name" : "TORFOREX.COM",
+  "link" : "https://torforex.com/prognoz-forex/usdcad-prognoz-kanadskij-dollar-na-20-maya-2022/",
+  "date" : "20.05.2022",
+  "currencyPairName" : "USD/CAD",
+  "min" : 1.276,
+  "max" : 1.3225,
+  "direction" : "u"
+}, {
+  "name" : "TORFOREX.COM",
+  "link" : "https://torforex.com/prognoz-forex/usdchf-prognoz-dollar-frank-na-20-maya-2022/",
+  "date" : "20.05.2022",
+  "currencyPairName" : "USD/CHF",
+  "min" : 0.9525,
+  "max" : 0.9765,
+  "direction" : "d"
+}, {
+  "name" : "TORFOREX.COM",
+  "link" : "https://torforex.com/prognoz-forex/gbpusd-prognoz-funt-dollar-na-20-maya-2022/",
+  "date" : "20.05.2022",
+  "currencyPairName" : "GBP/USD",
+  "min" : 1.2145,
+  "max" : 1.2555,
+  "direction" : "d"
+}, {
+  "name" : "TORFOREX.COM",
+  "link" : "https://torforex.com/prognoz-forex/forex-prognoz-i-analitika-nzdusd-na-20-maya-2022/",
+  "date" : "20.05.2022",
+  "currencyPairName" : "NZD/USD",
+  "min" : 0.6165,
+  "max" : 0.6455,
+  "direction" : "d"
+}, {
+  "name" : "TORFOREX.COM",
+  "link" : "https://torforex.com/prognoz-forex/audusd-prognoz-forex-i-analitika-na-20-maya-2022/",
+  "date" : "20.05.2022",
+  "currencyPairName" : "AUD/USD",
+  "min" : 0.6745,
+  "max" : 0.715,
+  "direction" : "d"
+}, {
+  "name" : "TORFOREX.COM",
+  "link" : "https://torforex.com/prognoz-forex/usdjpy-prognoz-dollar-iena-na-20-maya-2022/",
+  "date" : "20.05.2022",
+  "currencyPairName" : "USD/JPY",
+  "min" : 126.05,
+  "max" : 130.35,
+  "direction" : "u"
+} ]
