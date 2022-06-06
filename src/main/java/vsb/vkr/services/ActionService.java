@@ -101,10 +101,12 @@ public class ActionService {
             return -1;
         }
     }
+
     public List<Fresh> getFreshForecast() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-        List<Fresh> finalForecasts = Arrays.asList(mapper.readValue(Paths.get("fresh.json").toFile(), Fresh[].class));
-        log.info("Получение списка прогнозов");
+//        List<Fresh> finalForecasts = Arrays.asList(mapper.readValue(Paths.get("fresh.json").toFile(), Fresh[].class))
+        List<Fresh> finalForecasts = ParserService.parse("https://torforex.com");
+//        log.info("Получение списка прогнозов");
         return finalForecasts;
     }
 }
