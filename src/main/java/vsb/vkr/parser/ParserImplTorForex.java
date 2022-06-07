@@ -18,13 +18,13 @@ public class ParserImplTorForex implements Parser {
     @Override
     public List<Fresh> parseArticlesLink(String baseUrl, boolean allPageScan) {
         List<Fresh> fullList = new ArrayList<>();
-        List<String> visited = Arrays.asList("https://torforex.com/prognoz-forex/eurusd-prognoz-evro-dollar-na-3-iyunya-2022/",
-                "https://torforex.com/prognoz-forex/usdcad-prognoz-kanadskij-dollar-na-3-iyunya-2022/",
-                "https://torforex.com/prognoz-forex/usdchf-prognoz-dollar-frank-na-3-iyunya-2022/",
-                "https://torforex.com/prognoz-forex/gbpusd-prognoz-funt-dollar-na-3-iyunya-2022/",
-                "https://torforex.com/prognoz-forex/forex-prognoz-i-analitika-nzdusd-na-3-iyunya-2022/",
-                "https://torforex.com/prognoz-forex/audusd-prognoz-forex-i-analitika-na-3-iyunya-2022/",
-                "https://torforex.com/prognoz-forex/usdjpy-prognoz-dollar-iena-na-3-iyunya-2022/"
+        List<String> visited = Arrays.asList("https://torforex.com/prognoz-forex/eurusd-prognoz-evro-dollar-na-6-10-iyunya-2022/",
+                "https://torforex.com/prognoz-forex/usdchf-prognoz-kursa-franka-na-6-10-iyunya-2022/",
+                "https://torforex.com/prognoz-forex/gbpusd-prognoz-forex-na-6-10-iyunya-2022/",
+                "https://torforex.com/prognoz-forex/usdcad-prognoz-kanadskij-dollar-na-6-10-iyunya-2022/",
+                "https://torforex.com/prognoz-forex/tehnicheskij-analiz-nzdusd-na-6-10-iyunya-2022/",
+                "https://torforex.com/prognoz-forex/forex-prognoz-audusd-na-6-10-iyunya-2022/",
+                "https://torforex.com/prognoz-forex/usdjpy-prognoz-dollar-iena-na-6-10-iyunya-2022/"
         );
         try {
             int lastPage = 1;

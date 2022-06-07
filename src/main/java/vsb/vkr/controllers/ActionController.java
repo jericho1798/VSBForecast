@@ -56,6 +56,11 @@ public class ActionController {
 //        freshRepo.saveAll(forecasts);
 //    }
 
+    /**
+     * @return Получение списка прогнозов на текущую дату.
+     * Обход веб-ресурса до тех пор, пока не будт достигнута ранее посещенная веб-страница
+     * @throws IOException
+     */
     @GetMapping(value = "getFreshForecasts", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Fresh> getFreshForecast() throws IOException {
         log.info("Получение свежих прогнозов");
@@ -64,6 +69,11 @@ public class ActionController {
     }
 
 
+    /**
+     * @param currencyPairName Наименование валютной пары
+     * @return Полученеи списка ВСЕХ прогнозов
+     * @throws IOException
+     */
     @GetMapping
     public List<Forecast> allForecasts(@RequestParam(required = false) String currencyPairName) throws IOException {
 //        if (ObjectUtils.isEmpty(currencyPairName)) {
@@ -83,6 +93,10 @@ public class ActionController {
     }
 
 
+    /**
+     * @param model Метод вычисления рейтинга
+     * @return Объект-эксперт с вычисленным рейтингом
+     */
     @GetMapping("/rating")
     public Exp rating(Map<String, Object> model) {
         String i = "TORFOREX.COM";
