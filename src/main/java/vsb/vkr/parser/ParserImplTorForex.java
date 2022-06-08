@@ -42,16 +42,19 @@ public class ParserImplTorForex implements Parser {
                 document = Jsoup.connect(url).get();
                 Elements title = document.select("article");
                 Elements links = title.select("a.more-link");
-                for (Element l : links) {
-                    if (visited.contains(l.attr("href"))) {
-                        System.out.println("Reached");
-                        break;
-                    } else {
-                        Fresh forecast = parseData(l.attr("href"));
-                        if (!forecast.getName().equals("trash") && !forecast.getDate().equals("trash"))
-                            fullList.add(forecast);
-                    }
-                }
+//                for (Element l : links) {
+//                    if (visited.contains(l.attr("href"))) {
+//                        System.out.println("Reached");
+//                        break;
+//                    } else {
+//                        Fresh forecast = parseData(l.attr("href"));
+//                        if (!forecast.getName().equals("trash") && !forecast.getDate().equals("trash"))
+//                            fullList.add(forecast);
+//                    }
+//                }
+                Fresh forecast = parseData(links.get(0).attr("href"));
+                if (!forecast.getName().equals("trash") && !forecast.getDate().equals("trash"))
+                    fullList.add(forecast);
             }
         } catch (IOException e) {
             e.printStackTrace();
